@@ -6,7 +6,7 @@ const Product = ({ product }) => {
             <img className="product-image" src={`src/assets/img/${product.img}.jpg`} alt="" />
             <h3 className="d-block">{product.name}</h3>
             <div className="product-details">
-                <span className="current-price">Price: £{formatPrice(product.price)}</span>
+                <span className="current-price">£{formatPrice(product.price)}</span>
                 <span className={`was-price ${!product.was_price ? 'empty' : ''} d-block`}>
                     Was Price: <span className="price">{product.was_price ? `£${formatPrice(product.was_price)}` : ''}</span>
                 </span>
